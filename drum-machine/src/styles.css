@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+}
+body {
+  font-size: 24px;
+}
+
+#drum-machine {
+  margin: 15px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  width: 100%;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 1fr;
+  padding: 10px;
+  border-radius: 15px;
+  margin-top: 40px;
+  background: #ede574; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ede574,
+    #e1f5c4
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ede574, #e1f5c4);
+}
+.keybord {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.drum-pd {
+  width: 100%;
+  height: 70px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  outline: none;
+  background-color: #ffffff;
+  transition: all 0.2 ease-out;
+}
+.control {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.control button {
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  color: cornsilk;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  background-color: black;
+}
+
+.controle > button,
+.controle > input,
+.controle > h2 {
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    width: 680px;
+  }
+}
+@media (min-width: 992px) {
+  .wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
